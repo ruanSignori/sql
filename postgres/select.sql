@@ -1,4 +1,4 @@
--- Seleciona todos os alunos que o nome é diferente de Ruan
+-- Seleciona todos os alunos que o nome é diferente de Ruan, os tipos nulos não entram nesse filtro
 SELECT *
 FROM aluno
 WHERE nome <> 'Ruan'; -- ou !=
@@ -17,3 +17,23 @@ WHERE nome NOT LIKE '_uan';
 SELECT *
 FROM aluno
 WHERE nome LIKE '%a%';
+
+-- A atribuição de = não funciona para comparar se o tipo é NULL, necessário usar o IS
+SELECT *
+FROM aluno
+WHERE cpf IS NULL
+
+-- Seleciona todos que não são nulos
+SELECT *
+FROM aluno
+WHERE cpf IS NOT NULL
+
+-- Seleciona todos que a idade é maior ou igual a 19
+SELECT *
+FROM aluno
+WHERE idade >= 19
+
+-- Seleciona todos entre 10 e 19
+SELECT *
+FROM aluno
+WHERE idade BETWEEN 10 AND 19;
