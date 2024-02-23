@@ -1,4 +1,4 @@
-# Tipos de Dados SQL
+# Tipos de Dados MySQL
 
 1. **Boolean**
     
