@@ -3,7 +3,7 @@
 Execute os comandos de forma sequencial
 
 
-> Create the file repository configuration:
+> Criar as configurações do repositório:
 
 
 ```bash
@@ -12,22 +12,22 @@ sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs
 
 <hr>
 
-> Import the repository signing key:
+> Importar a chave de login do repositório:
 ```bash
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 ```
 
 <hr>
 
-> Update the package lists:
+> Atualizar pacotes do Ubuntu
 ```bash
 sudo apt-get update
 ```
 
 <hr>
 
-> Install the latest version of PostgreSQL. <br>
-If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
+> Instalar a versão mais recente do PSQL. <br>
+Se você quer instalar uma versão específica, acrescente 'postgresql-12' ou outra versão no comando abaixo
 ```bash
 sudo apt-get -y install postgresql
 ```
