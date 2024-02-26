@@ -1,0 +1,14 @@
+-- Concatenação
+SELECT (primeiro_nome || ' ' || ultimo_nome) AS "fUllName"
+
+-- O operador Concat, retorna apenas os valores "verdadeiros", ignorando os NULLS por exemplo
+SELECT CONCAT('Ruan', ' ', NULL);
+
+-- Length
+SELECT CHAR_LENGTH('Ruan');
+
+-- Pode usar uma função dentro da outra
+SELECT TRIM(UPPER('ruan   '));
+
+-- Documentação oficial
+-- https://www.postgresql.org/docs/9.1/functions-string.html
