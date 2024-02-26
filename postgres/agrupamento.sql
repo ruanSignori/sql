@@ -1,4 +1,4 @@
--- Quando precisar usar uma função de agregação, usar o GROUP BY, se não, pode usar o DISTINCT
+-- Quando precisar usar uma função de agregação (SUM, MAX, COUNT), usar o GROUP BY, se não, pode usar o DISTINCT
 
 -- Retorna apenas os valores que são diferentes
 SELECT DISTINCT
