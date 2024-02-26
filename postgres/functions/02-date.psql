@@ -1,0 +1,10 @@
+-- Retorna a data atual no formato TIMESTAMP
+SELECT NOW();
+
+-- A idade desde a data passada como parâmetro
+AGE(data_nascimento)
+
+-- Receber somente o ano
+EXTRACT(YEAR FROM AGE(data_nascimento))
+
+-- Documentação oficial
