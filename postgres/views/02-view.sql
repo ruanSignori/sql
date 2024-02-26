@@ -1,4 +1,4 @@
-
+-- Mostra o nome do aluno, qual curso ele faz, e qual categoria é esse curos que ele está fazendo
 SELECT 
 	aluno_curso.aluno_id AS "Id Aluno", 
 	aluno.primeiro_nome as "Primeiro Nome", 
