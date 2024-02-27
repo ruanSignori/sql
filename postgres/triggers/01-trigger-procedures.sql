@@ -37,6 +37,9 @@ CREATE OR REPLACE FUNCTION teste.save_log () RETURNS TRIGGER AS $$
 	END;
 $$ LANGUAGE plpgsql;
 
+-- Depois de 'ATUALIZAR' ou 'DELETAR' ou 'ADICIONAR um novo instrutor
+-- Para cada linha da operação executa a função "teste.save_log()"
+
 CREATE TRIGGER save_log_tg 
 AFTER INSERT OR UPDATE OR DELETE ON instrutor
 FOR EACH ROW EXECUTE FUNCTION teste.save_log();
