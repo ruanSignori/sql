@@ -1,0 +1,27 @@
+CREATE FUNCTION fn() RETURNS INTEGER AS '
+	SELECT (1 - 1)
+' LANGUAGE SQl;
+
+SELECT fn();
+
+
+CREATE FUNCTION fnSum(n1 INTEGER, n2 INTEGER) RETURNS INTEGER AS '
+	SELECT (n1 + n2)
+' LANGUAGE SQl;
+
+-- Você não precisa informar o nome dos parâmetros
+CREATE FUNCTION fnSum(INTEGER, INTEGER) RETURNS INTEGER AS '
+	SELECT ($1 + $2)
+' LANGUAGE SQl;
+
+
+SELECT fnSum(65, 23);
+
+-- Função com parâmetros
+CREATE OR REPLACE FUNCTION add_a(nome VARCHAR) RETURNS VARCHAR AS '
+	INSERT INTO a (nome) VALUES (add_a.nome);
+	
+	SELECT nome;
+' LANGUAGE SQL;
+
+SELECT add_a('Ruan sig')
