@@ -53,7 +53,7 @@ psql
 
 <br><br>
 
-# Instalação do PSQL
+# Instalação do PgAdmin4
 
 > Instalar o curl
 
